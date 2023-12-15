@@ -6,8 +6,9 @@ import { Surface } from "./Surface"
 
 import { GiHamburgerMenu } from "react-icons/gi"
 import { Sandwich } from "./Sandwich"
+import { PlanetInterface } from "../../dataInterface"
 
-export const MobilePlanet = ({currentPlanet}: any ) => {
+export const MobilePlanet = (currentPlanet: PlanetInterface) => {
     const [overview, setOverwiew] = useState<boolean>(true)
     const [structure, setStructure] = useState<boolean>(false)
     const [surface, setSurface] = useState<boolean>(false)
@@ -66,7 +67,7 @@ export const MobilePlanet = ({currentPlanet}: any ) => {
           : null
         }
         
-        <div className=' flex flex-col gap-2'>
+        <div className=' flex flex-col gap-2 mb-[50px]'>
           <div className=' flex w-[327px] h-[50px] p-4 justify-between items-center 
           border border-[#ffffff]
           ' > 
