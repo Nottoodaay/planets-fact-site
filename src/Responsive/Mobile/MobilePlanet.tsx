@@ -8,7 +8,12 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { Sandwich } from "./Sandwich"
 import { PlanetInterface } from "../../dataInterface"
 
-export const MobilePlanet = (currentPlanet: PlanetInterface) => {
+interface MobilePlanetProps{
+  currentPlanet: PlanetInterface
+}
+
+export const MobilePlanet = ({currentPlanet}: MobilePlanetProps) => {
+  
     const [overview, setOverwiew] = useState<boolean>(true)
     const [structure, setStructure] = useState<boolean>(false)
     const [surface, setSurface] = useState<boolean>(false)

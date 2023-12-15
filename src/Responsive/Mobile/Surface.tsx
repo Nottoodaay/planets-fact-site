@@ -1,5 +1,10 @@
+import { PlanetInterface } from "../../dataInterface"
 
-export const Surface = ({currentPlanet}: any) => {
+interface SurfaceInterface{
+  currentPlanet: PlanetInterface
+}
+
+export const Surface = ({currentPlanet}: SurfaceInterface) => {
   return (
     <>
       <div className=" flex flex-col items-center relative" >

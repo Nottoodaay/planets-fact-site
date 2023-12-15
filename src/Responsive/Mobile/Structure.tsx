@@ -1,5 +1,10 @@
+import { PlanetInterface } from "../../dataInterface"
 
-export const Structure = ({currentPlanet}: any) => {
+interface StructureProps{
+  currentPlanet: PlanetInterface
+}
+
+export const Structure = ({currentPlanet}: StructureProps) => {
   return (
     <>
     <img src={currentPlanet?.images.internal} className=' w-[110px] h-[110px]' alt="img" />
