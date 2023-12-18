@@ -1,7 +1,7 @@
 import { PlanetInterface } from "../../dataInterface"
 
 interface OverviewProps{
-  currentPlanet: PlanetInterface
+  currentPlanet: PlanetInterface | undefined
 }
 
 export const Overview = ({currentPlanet}:OverviewProps) => {

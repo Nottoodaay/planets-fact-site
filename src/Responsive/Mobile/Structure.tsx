@@ -1,7 +1,7 @@
 import { PlanetInterface } from "../../dataInterface"
 
 interface StructureProps{
-  currentPlanet: PlanetInterface
+  currentPlanet: PlanetInterface | undefined
 }
 
 export const Structure = ({currentPlanet}: StructureProps) => {

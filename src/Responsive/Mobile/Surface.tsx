@@ -1,7 +1,7 @@
 import { PlanetInterface } from "../../dataInterface"
 
 interface SurfaceInterface{
-  currentPlanet: PlanetInterface
+  currentPlanet: PlanetInterface | undefined
 }
 
 export const Surface = ({currentPlanet}: SurfaceInterface) => {

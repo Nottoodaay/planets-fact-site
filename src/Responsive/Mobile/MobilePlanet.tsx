@@ -9,7 +9,7 @@ import { Sandwich } from "./Sandwich"
 import { PlanetInterface } from "../../dataInterface"
 
 interface MobilePlanetProps{
-  currentPlanet: PlanetInterface
+  currentPlanet: PlanetInterface | undefined
 }
 
 export const MobilePlanet = ({currentPlanet}: MobilePlanetProps) => {
@@ -39,7 +39,10 @@ export const MobilePlanet = ({currentPlanet}: MobilePlanetProps) => {
     }
 
   return (
-    <div className=' text-[#ffff] flex flex-col gap-4 items-center relative'>
+    <div className=' text-[#ffff] flex flex-col gap-4 items-center relative
+    w-[100vw] h-[100%] md:hidden
+    bg-[url("/assets/background-stars.svg")] bg-cover bg-[#070724]
+    '>
       <div className=' flex w-[328px] mt-4 justify-between items-baseline' >
             <h1 className=' text-2xl' >THE PLANETS</h1>
             <GiHamburgerMenu size={'24px'} onClick={()=>setSandwich(!sandwich)} />
