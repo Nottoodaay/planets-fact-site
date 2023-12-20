@@ -33,7 +33,7 @@ export const DesktopPlanet = ({currentPlanet}:DesktopPlanetProps) => {
   }
 
   return (
-    <div className=' w-[100%] h-[100%] pb-[70px] flex-col text-white items-center 
+    <div className=' w-[100%] h-[100vh] pb-[70px] flex-col text-white items-center 
     bg-[url("/assets/background-stars.svg")] bg-cover bg-[#070724] hidden md:flex overflow-x-hidden' >
       
       <Header/>
