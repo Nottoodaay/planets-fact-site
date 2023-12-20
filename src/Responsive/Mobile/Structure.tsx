@@ -11,7 +11,10 @@ export const Structure = ({currentPlanet}: StructureProps) => {
       <h2 className=' text-[40px]'>{currentPlanet?.name}</h2>
       <div className='w-[327px]'>{currentPlanet?.structure.content}</div>
 
-      <div className=" w-[200px]" >{currentPlanet?.structure.source}</div>
+      <div className=" flex">
+        <p>source:</p>
+        <a href={currentPlanet?.structure.source} className=" font-bold" target="blank">Wikipedia</a>
+      </div>
 
     </>
   )

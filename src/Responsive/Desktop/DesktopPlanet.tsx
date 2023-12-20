@@ -33,8 +33,8 @@ export const DesktopPlanet = ({currentPlanet}:DesktopPlanetProps) => {
   }
 
   return (
-    <div className=' w-[100vw] pb-[70px] flex flex-col text-white items-center 
-    bg-[url("/assets/background-stars.svg")] bg-cover bg-[#070724] sm:hidden md:flex' >
+    <div className=' w-[100%] h-[100%] pb-[70px] flex-col text-white items-center 
+    bg-[url("/assets/background-stars.svg")] bg-cover bg-[#070724] hidden md:flex overflow-x-hidden' >
       
       <Header/>
       
@@ -45,32 +45,29 @@ export const DesktopPlanet = ({currentPlanet}:DesktopPlanetProps) => {
         : null
       }
 
-      
-      
-      
         <div className=" flex gap-3 lg:gap-[30px]">
           <div className=" w-[164px] h-[88px] border border-white flex flex-col p-4
             lg:w-[254px] lg:h-[128px] lg:gap-1" >
             <h2 className=" uppercase text-xs bold opacity-50 lg:text-base" >Rotation Time</h2>
-            <div className=" uppercase text-2xl lg:text-[40px]" >{currentPlanet?.rotation}</div>
+            <div className=" uppercase text-xl lg:text-[30px]" >{currentPlanet?.rotation}</div>
           </div>
 
           <div className=" w-[164px] h-[88px] border border-white flex flex-col p-4
             lg:w-[254px] lg:h-[128px] lg:gap-1" >
             <h2 className=" uppercase text-xs bold opacity-50 lg:text-base" >Revolution Time</h2>
-            <div className=" uppercase text-2xl lg:text-[40px]" >{currentPlanet?.revolution}</div>
+            <div className=" uppercase text-xl lg:text-[30px]" >{currentPlanet?.revolution}</div>
           </div>
 
           <div className=" w-[164px] h-[88px] border border-white flex flex-col p-4 
             lg:w-[254px] lg:h-[128px] lg:gap-1" >
             <h2 className=" uppercase text-xs bold opacity-50 lg:text-base" >radius</h2>
-            <div className=" uppercase text-2xl lg:text-[40px]" >{currentPlanet?.radius}</div>
+            <div className=" uppercase text-xl lg:text-[30px]" >{currentPlanet?.radius}</div>
           </div>
 
           <div className=" w-[164px] h-[88px] border border-white flex flex-col p-4 
            lg:w-[254px] lg:h-[128px] lg:gap-1" >
             <h2 className=" uppercase text-xs bold opacity-50 lg:text-base" >average tepm</h2>
-            <div className=" uppercase text-2xl lg:text-[40px]" >{currentPlanet?.temperature}</div>
+            <div className=" uppercase text-xl lg:text-[30px]" >{currentPlanet?.temperature}</div>
           </div>
         </div>
     </div>

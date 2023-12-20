@@ -15,7 +15,11 @@ export const Surface = ({currentPlanet}: SurfaceInterface) => {
       <h2 className=' text-[40px]'>{currentPlanet?.name}</h2>
       <div className='w-[327px]'>{currentPlanet?.geology.content}</div>
 
-      <div className=" w-[200px]" >{currentPlanet?.geology.source}</div>
+      <div className=" flex">
+        <p>source:</p>
+        <a href={currentPlanet?.geology.source} className=" font-bold" target="blank">Wikipedia</a>
+      </div>
+
     </>
   )
 }

@@ -17,4 +17,5 @@ export interface PlanetInterface {
         internal: string;
         geology: string;
     };
+    color: string
 }

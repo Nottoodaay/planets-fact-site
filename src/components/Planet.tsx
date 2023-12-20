@@ -11,8 +11,7 @@ export const Planet = () => {
 
   
   return (
-    <div>
-      
+    <div className=''>
       <MobilePlanet currentPlanet={currentPlanet} />
       
       <DesktopPlanet currentPlanet={currentPlanet}  />

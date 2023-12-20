@@ -40,7 +40,7 @@ export const MobilePlanet = ({currentPlanet}: MobilePlanetProps) => {
 
   return (
     <div className=' text-[#ffff] flex flex-col gap-4 items-center relative
-    w-[100vw] h-[100%] md:hidden
+    w-[100%] h-[100%] md:hidden overflow-hidden
     bg-[url("/assets/background-stars.svg")] bg-cover bg-[#070724]
     '>
       <div className=' flex w-[328px] mt-4 justify-between items-baseline' >
@@ -55,7 +55,7 @@ export const MobilePlanet = ({currentPlanet}: MobilePlanetProps) => {
           null
         }
 
-        <div className=' flex w-[100vw] h-[50px] 
+        <div className=' flex w-[100vw] h-[50px] cursor-pointer 
         items-center justify-center
         gap-[44px] border-t border-b border-[#ffffff]'>
           <h2 onClick={() => stateComponentChange('overview')} >OVERVIEW</h2>
